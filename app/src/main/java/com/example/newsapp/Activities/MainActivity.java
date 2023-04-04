@@ -50,18 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.general.setOnClickListener(this);
         binding.business.setOnClickListener(this);
 
-//        binding.general.setOnClickListener(view -> {
-//            binding.generall.setBackgroundResource(R.drawable.circuler_slect_bg);
-//            binding.sportss.setBackgroundResource(R.drawable.circuler_bg);
-//
-//
-//        });
-//        binding.sports.setOnClickListener(view -> {
-//            binding.sportss.setBackgroundResource(R.drawable.circuler_slect_bg);
-//            binding.generall.setBackgroundResource(R.drawable.circuler_bg);
-//
-//
-//        });
+
 
 
         adapter = new MainRvAdapter(this, newsList);
@@ -69,20 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.mainRecyclerView.setLayoutManager(layoutManager);
         binding.mainRecyclerView.setAdapter(adapter);
 
-//        RequestManager manager = new RequestManager(MainActivity.this);
-//        manager.getHeadlines(listener,"general",null);
     }
-    //    private final onFetchDataListener<ApiResponse> listener = new onFetchDataListener() {
-//        @Override
-//        public void onFetchData(List<ApiResponse> list, String massage) {
-//
-//        }
-//
-//        @Override
-//        public void onError(String massage) {
-//
-//        }
-//    }
     void getNews(String url) {
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
