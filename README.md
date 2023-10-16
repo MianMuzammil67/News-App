@@ -6,5 +6,5 @@ This is a simple Android application that displays news articles from News API. 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
 # Cons
-Cannot query for news (Can be fixed by cloning this repo and customizing according to your needs)
+Cannot query for news (There is an issue with API)
 
